@@ -1,3 +1,44 @@
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('Roboto/Roboto-Bold.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('Roboto/Roboto-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('Roboto/Roboto-Black.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('Roboto/Roboto-Black.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('Roboto/Roboto-Medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('Roboto/Roboto-Medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto/Roboto-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('Roboto/Roboto-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
+
+
+
+.rob-Bold{
+  font-family: 'Roboto-Bold';
+}
+.rob-Black{
+  font-family: 'Roboto-Black';
+}
+.rob-Medium{
+  font-family: 'Roboto-Medium';
+}
+.rob-Regular{
+  font-family: 'Roboto-Regular';
+}
+
+*{
+  font-family: 'Roboto-Regular';
+}
 .bg-banner{
     background-image: url('../src/Banner.jpg');
     background-size: cover;
@@ -127,6 +168,34 @@ input[type=range] {
     background: #74A9D8;
   }
 
-  .radio-p4{
+  .img-radio-p4{
     width: 200px;
+  }
+  .img-p6{
+    max-width: none;
+    width: 78px;
+    padding: 6px;
+  }
+  .span-img-p6{
+    margin-left: 38px;
+    margin-right: -22px;
+  }
+  .dp6{
+    height: 56px;
+    width: 275px;
+  }
+ 
+  @media (max-width:421px) {
+    .dp6{
+      height: 56px;
+      width: 210px;
+      font-size: 15px;
+    } 
+  }
+  @media (max-width:1087px) {
+    .dp6{
+      height: 56px;
+      width: 230px;
+      font-size: 15px;
+    } 
   }

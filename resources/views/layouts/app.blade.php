@@ -46,13 +46,39 @@
         @livewireScripts
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script>
-                $('.radio-p4').click(function() {
-                    if($(this).attr("src").indexOf("-.png") >= 0 ){
-                        $(this).attr("src", $(this).attr("src").replace('-.png', '.png') ) 
-                    } else {
-                        $(this).attr("src", $(this).attr("src").replace('.png', '-.png') ) 
-                    }
-                });
+
+            //pregunta 4
+                $('input[name="p4"]').change(function(){
+                    
+                    $('#p4r1').attr("src", $('#p4r1').attr("src").replace('-.png', '.png'))
+                    $('#p4r2').attr("src", $('#p4r2').attr("src").replace('-.png', '.png'))
+                    $('#p4r3').attr("src", $('#p4r3').attr("src").replace('-.png', '.png'))
+
+                    
+                    $('#p4r'+$(this).val()).attr("src", $('#p4r'+$(this).val()).attr("src").replace('.png', '-.png'))
+                    
+                    console.log($(this).val());
+                })
+
+                //pregunta 5
+                $('input[name="p5"]').change(function(){
+                    
+                    $('.dp5').removeClass('bg-dark')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                    $('.dp5').removeClass('text-ligth')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                    $('.dp5').addClass('bg-ligth')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                    $('.dp5').addClass('text-dark')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                    // $('#dp5r2').removeClass('bg-dark')    // attr("src", $('#dp5r2').attr("src").replace('-.png', '.png'))
+                    // $('#dp5r3').removeClass('bg-dark')    // attr("src", $('#dp5r3').attr("src").replace('-.png', '.png'))
+                    // $('#dp5r4').removeClass('bg-dark')    // attr("src", $('#dp5r4').attr("src").replace('-.png', '.png'))
+
+                    
+                    $('#dp5r'+$(this).val()).addClass('bg-dark')
+                    $('#dp5r'+$(this).val()).addClass('text-ligth')
+                    
+                    console.log($(this).val());
+                })
+
+
 
         </script>
     </body>
