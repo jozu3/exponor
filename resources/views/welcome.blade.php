@@ -154,7 +154,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Servicio</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/servicio.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/servicio.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -164,7 +164,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Tecnología</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/tecnologia.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/tecnologia.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -174,7 +174,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Remanufactura</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/remanufactura.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/remanufactura.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -186,7 +186,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Recondoil</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/recondoil.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/recondoil.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -196,7 +196,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Sistemas de lubricación</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/lubricacion.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/lubricacion.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
