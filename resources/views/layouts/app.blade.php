@@ -44,5 +44,16 @@
         @stack('modals')
 
         @livewireScripts
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script>
+                $('.radio-p4').click(function() {
+                    if($(this).attr("src").indexOf("-.png") >= 0 ){
+                        $(this).attr("src", $(this).attr("src").replace('-.png', '.png') ) 
+                    } else {
+                        $(this).attr("src", $(this).attr("src").replace('.png', '-.png') ) 
+                    }
+                });
+
+        </script>
     </body>
 </html>

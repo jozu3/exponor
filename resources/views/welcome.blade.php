@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h1 class="font-semibold text-xl text-gray-800 leading-tight">
-            <div class="mt-8 text-4xl text-ligth">
+            <div class="mt-8 text-ligth" style="font-size: 4rem;">
                 <b>EXPO</b>NOR 2022
             </div>
         </h1>
@@ -33,14 +33,14 @@
             <div class="w-full p-16 text-left mx-auto">
                 <div x-show="activeTab===0" class="w-100">
                     <h2 class="font-bold text-ligth text-2xl mb-4">CUENTANOS SOBRE TU EMPRESA</h2>
-                    <div>
+                    <div class="mb-8">
                         <b>
-                            <li class="text-dark">Desplaza la barra para el nivel de planta</li>
+                            <li class="text-dark mb-6">Desplaza la barra para el nivel de planta</li>
                             <div class="div-range-input">
                                 <input type="range" class="range-input" min="1" max="3">
                             </div>
                             <div>
-                                <div class="flex justify-between m-auto text-ligth" style="width:80%; ">
+                                <div class="flex justify-between m-auto text-ligth font-bold" style="width:75%; ">
                                     <div>Bajo</div>
                                     <div>Medio</div>
                                     <div>Alto</div>
@@ -49,16 +49,16 @@
                         </b>
                         <br>
                     </div>
-                    <div>
+                    <div class="mb-8">
                         <b>
-                            <li class="text-dark">Desplaza la barra para identificar cuál es el nivel de
+                            <li class="text-dark mb-6">Desplaza la barra para identificar cuál es el nivel de
                                 tecnificación mantenimiento predictivo</li>
                         </b>
                         <div class="div-range-input">
                             <input type="range" class="range-input" min="1" max="3">
                         </div>
                         <div>
-                            <div class="flex justify-between m-auto text-ligth" style="width:80%; ">
+                            <div class="flex justify-between m-auto text-ligth font-bold" style="width:75%; ">
                                 <div>Bajo</div>
                                 <div>Medio</div>
                                 <div>Alto</div>
@@ -66,54 +66,73 @@
                         </div>
                         <br>
                     </div>
-                    <div>
+                    <div class="mb-8">
                         <b>
-                            <li class="text-dark">¿Cuáles son las áreas de interes a desarrollar?</li>
+                            <li class="text-dark mb-4">¿Cuáles son las áreas de interes a desarrollar?</li>
                         </b>
                         <div class="text-center">
                             <textarea class="textarea-exponor mt-2" placeholder="Escribe algo..." name="p3" id="p3" cols="100%" rows="5" ></textarea>
                         </div>
                     </div>
-                    <div>
+                    <div class="mb-8">
                         <b>
-                            <li class="text-dark">Selecciona el rango estimado de presupuesto de mantenimiento</li>
+                            <li class="text-dark mb-6">Selecciona el rango estimado de presupuesto de mantenimiento</li>
                         </b>
                         <div>
                             <div class="flex justify-between m-auto text-ligth" style="width:80%; ">
                                 <div>
-                                    <label for="">
-                                        <input type="radio" name="p4">
-                                        <img src="{{config('app.url')}}/src/icons/Mail.png" alt="">
+                                    <label for="r1">
+                                        <img id="p4r1" src="{{config('app.url')}}/src/IMG/p4r1.png" class="radio-p4 cursor-pointer" alt="">
                                     </label>
+                                    <input id="r1" type="radio" name="p4">
                                 </div>
                                 <div>
-                                    <input type="radio" name="p4">
+                                    <label for="r2">
+                                        <img id="p4r2" src="{{config('app.url')}}/src/IMG/p4r2.png" class="radio-p4 cursor-pointer" alt="">
+                                    </label>
+                                    <input id="r2" type="radio" name="p4">
                                 </div>
                                 <div>
-                                    <input type="radio" name="p4">
+                                    <label for="r3">
+                                        <img id="p4r3" src="{{config('app.url')}}/src/IMG/p4r3.png" class="radio-p4 cursor-pointer" alt="">
+                                    </label>
+                                    <input id="r3" type="radio" name="p4">
                                 </div>
                             </div>
                         </div>
                         <br>
                     </div>
-                    <div>
+                    <div class="mb-8">
                         <b>
-                            <li class="text-dark">Comercialmente como se relaciona con SKF</li>
+                            <li class="text-dark mb-6">Comercialmente como se relaciona con SKF</li>
                         </b>
                         <div>
                             <div class="flex justify-between m-auto text-ligth" style="width:80%; ">
                                 <div>
-                                    <input type="radio" name="p4">
+                                    <label for="r4">
+                                        <div class="p-4 bg-dark rounded-lg cursor-pointer" >Ventas Spoot</div>
+                                    </label>
+                                    <input id="r4" type="radio" name="p5">
                                 </div>
                                 <div>
-                                    <input type="radio" name="p4">
+                                    <label for="r5">
+                                        <div class="p-4 bg-dark rounded-lg cursor-pointer" >Contratos de suministro</div>
+                                    </label>
+                                    <input id="r5" type="radio" name="p5">
                                 </div>
                                 <div>
-                                    <input type="radio" name="p4">
+                                    <label for="r6">
+                                        <div class="p-4 bg-dark rounded-lg cursor-pointer" >Compra de reposición</div>
+                                    </label>
+                                    <input id="r6" type="radio" name="p5">
                                 </div>
                                 <div>
-                                    <input type="radio" name="p4">
+                                    <label for="r7">
+                                        <div class="p-4 bg-dark rounded-lg cursor-pointer" >Soy un nuevo cliente</div>
+                                    </label>
+                                    <input id="r7" type="radio" name="p5">
                                 </div>
+                               
                             </div>
                         </div>
                         <br>
@@ -151,6 +170,8 @@
                 ]
             };
         };
+
+    
     </script>
     @livewire('section-form')
 

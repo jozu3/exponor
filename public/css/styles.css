@@ -22,13 +22,13 @@
     border-color: #264357;
 }
 .bg-section{
-    background-color: #7f9aa5;
+    background-color: #739ba7;
 }
 
 .textarea-exponor{
     border-radius: 15px;
     border: 1px solid #264357;
-    background-color: #7f9aa5;
+    background-color: #739ba7;
     color: #d7f1f4;
     width: 80%;
 }
@@ -43,7 +43,7 @@
 }
 .range-input{
     width: 80%;
-    background-color: #7f9aa5;
+    background-color: #739ba7;
 }
 
 input[type=range] {
@@ -117,7 +117,7 @@ input[type=range] {
     height: 26px;
     width: 26px;
     border-radius: 15px;
-    background: #7f9aa5;
+    background: #739ba7;
     cursor: pointer;
   }
   input[type=range]:focus::-ms-fill-lower {
@@ -125,4 +125,8 @@ input[type=range] {
   }
   input[type=range]:focus::-ms-fill-upper {
     background: #74A9D8;
+  }
+
+  .radio-p4{
+    width: 200px;
   }

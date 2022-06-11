@@ -60,7 +60,7 @@
     <div class="py-6">
         <div class="p-6 sm:px-20">
             <x-jet-label for="name" value="{{ __('¿Cuáles son las áreas de interés a desarrollar?') }}" class="text-ligth" />
-            <input type="text" class="block mt-1 w-full bg-dark border-0 border-ligth border-b-2" name="ainteres" :value="old('name')" required autofocus autocomplete="name" >
+            <input type="text" class="block mt-1 w-full bg-dark border-0 border-ligth border-b-2 text-ligth" name="ainteres" :value="old('name')" required autofocus autocomplete="name" >
             {{-- <x-jet-input id="name" class="block mt-1 w-full bg-dark border-0 border-ligth border-b-2" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />      --}}
         </div>
     </div>
