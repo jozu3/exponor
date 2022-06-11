@@ -154,7 +154,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Servicio</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/servicio.png" alt=""
+                                    <img src="http://localhost/exponor/public/src/icons/Servicio.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -164,7 +164,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Tecnología</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/tecnologia.png" alt=""
+                                    <img src="http://localhost/exponor/public/src/icons/Tecnologia.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -174,7 +174,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Remanufactura</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/remanufactura.png" alt=""
+                                    <img src="http://localhost/exponor/public/src/icons/Remanufactura.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -186,7 +186,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Recondoil</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/recondoil.png" alt=""
+                                    <img src="http://localhost/exponor/public/src/icons/Recondoil.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -196,7 +196,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Sistemas de lubricación</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="http://localhost/exponor/public/src/icons/lubricacion.png" alt=""
+                                    <img src="http://localhost/exponor/public/src/icons/Lubricacion.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -209,7 +209,7 @@
                     <div class="grid grid-rows-3 md:grid-rows-2 grid-flow-col gap-4">
                         <div>
                             <div class="rounded-full bg-dark p-6 m-auto max-w-fit">
-                                <img width="150px" class="" src="{{config('app.url')}}/src/icons/llamada.png" alt="">
+                                <img width="150px" class="" src="{{config('app.url')}}/src/icons/Llamada.png" alt="">
                             </div>
                             <div class="text-center text-ligth text-lg font-bold rob-Bold" >Llamada</div>
                         </div>
@@ -221,7 +221,7 @@
                         </div>
                         <div>
                             <div class="rounded-full bg-dark p-6 m-auto max-w-fit">
-                                <img width="150px" class="" src="{{config('app.url')}}/src/icons/videollamada.png" alt="">
+                                <img width="150px" class="" src="{{config('app.url')}}/src/icons/Videollamada.png" alt="">
                             </div>
                             <div class="text-center text-ligth text-lg font-bold rob-Bold" >Videollamada</div>
                         </div>
@@ -233,7 +233,7 @@
                         </div>
                         <div>
                             <div class="rounded-full bg-dark p-6 m-auto max-w-fit">
-                                <img width="150px" class="" src="{{config('app.url')}}/src/icons/presencial.png" alt="">
+                                <img width="150px" class="" src="{{config('app.url')}}/src/icons/Presencial.png" alt="">
                             </div>
                             <div class="text-center text-ligth text-lg font-bold rob-Bold" >Reunión presencial</div>
                         </div>
