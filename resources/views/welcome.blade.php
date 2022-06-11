@@ -154,7 +154,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Servicio</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="{{config('app.url')}}/src/icons/servicio.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/Servicio.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -164,7 +164,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Tecnología</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="{{config('app.url')}}/src/icons/tecnologia.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/Tecnologia.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -174,7 +174,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Remanufactura</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="{{config('app.url')}}/src/icons/remanufactura.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/Remanufactura.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
@@ -186,7 +186,7 @@
                                 class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                 <span>Recondoil</span>
                                 <span class="bg-dark rounded-full float-right span-img-p6">
-                                    <img src="{{config('app.url')}}/src/icons/recondoil.png" alt=""
+                                    <img src="{{config('app.url')}}/src/icons/Recondoil.png" alt=""
                                         class="inline-block img-p6">
                                 </span>
                             </div>
