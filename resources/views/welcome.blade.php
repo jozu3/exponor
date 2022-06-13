@@ -340,6 +340,9 @@
         </div>
 
     </form>
+
+
+    @livewire('gracias', ['open' => $estado])
     <script>
         function setup() {
             return {
