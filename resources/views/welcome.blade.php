@@ -125,7 +125,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
                                                 Ventas Spot</div>
                                         </label>
-                                        <input id="p5r1" type="radio" class="hidden" name="relacionskf"
+                                        <input id="p5r1" type="radio" class="hidden" name="relacionskf" required
                                             value="1">
                                     </div>
                                     <div>
@@ -134,7 +134,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
                                                 Contratos de suministro</div>
                                         </label>
-                                        <input id="p5r2" type="radio" class="hidden" name="relacionskf"
+                                        <input id="p5r2" type="radio" class="hidden" name="relacionskf" required
                                             value="2">
                                     </div>
                                     <div>
@@ -143,7 +143,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
                                                 Compra de reposición</div>
                                         </label>
-                                        <input id="p5r3" type="radio" class="hidden" name="relacionskf"
+                                        <input id="p5r3" type="radio" class="hidden" name="relacionskf" required
                                             value="3">
                                     </div>
                                     <div>
@@ -152,7 +152,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">Soy
                                                 un nuevo cliente</div>
                                         </label>
-                                        <input id="p5r4" type="radio" class="hidden" name="relacionskf"
+                                        <input id="p5r4" type="radio" class="" style="width:0px; height: 0px; opacity:0;" name="relacionskf" required
                                             value="4">
                                     </div>
 
@@ -256,7 +256,7 @@
                                             src="{{ config('app.url') }}/src/icons/llamada.png" alt="">
                                     </div>
                                     <div class="text-center text-ligth text-lg font-bold rob-Bold">Llamada</div>
-                                    <input id="llamada" type="radio" class="hidden" name="tipocontacto"
+                                    <input id="llamada" type="radio" class="hidden" name="tipocontacto" required
                                         value="Llamada">
                                 </label>
                             </div>
@@ -267,7 +267,7 @@
                                             src="{{ config('app.url') }}/src/icons/Mail.png" alt="">
                                     </div>
                                     <div class="text-center text-ligth text-lg font-bold rob-Bold">Mail</div>
-                                    <input id="mail" type="radio" class="hidden" name="tipocontacto" value="Mail">
+                                    <input id="mail" type="radio" class="hidden" name="tipocontacto" required value="Mail">
                                 </label>
                             </div>
                             <div>
@@ -277,7 +277,7 @@
                                             src="{{ config('app.url') }}/src/icons/Videollamada.png" alt="">
                                     </div>
                                     <div class="text-center text-ligth text-lg font-bold rob-Bold">Videollamada</div>
-                                    <input id="videollamada" type="radio" class="hidden" name="tipocontacto"
+                                    <input id="videollamada" type="radio" class="hidden" name="tipocontacto" required
                                         value="Videollamada">
                                 </label>
                             </div>
@@ -288,7 +288,7 @@
                                             src="{{ config('app.url') }}/src/icons/Wsp.png" alt="">
                                     </div>
                                     <div class="text-center text-ligth text-lg font-bold rob-Bold">Whatsapp</div>
-                                    <input id="wasap" type="radio" class="hidden" name="tipocontacto"
+                                    <input id="wasap" type="radio" class="hidden" name="tipocontacto" required
                                         value="Whatsapp">
                                 </label>
                             </div>
@@ -300,7 +300,7 @@
                                     </div>
                                     <div class="text-center text-ligth text-lg font-bold rob-Bold">Reunión presencial
                                     </div>
-                                    <input id="presencial" type="radio" class="hidden" name="tipocontacto"
+                                    <input id="presencial" type="radio" class="hidden" name="tipocontacto" required
                                         value="Reunión presencial">
                                 </label>
                             </div>
@@ -312,8 +312,8 @@
                                     </div>
                                     <div class="text-center text-ligth text-lg font-bold rob-Bold">Todas las anteriores
                                     </div>
-                                    <input id="todas" type="radio" class="hidden" name="tipocontacto"
-                                        value="Todas las anteriores">
+                                    <input id="todas" type="radio" class="" name="tipocontacto" required
+                                        value="Todas las anteriores" style="width:0px; height:0px; opacity:0;">
                                 </label>
                             </div>
                         </div>

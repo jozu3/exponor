@@ -30,7 +30,7 @@ class CreateNewUser implements CreatesNewUsers
             return User::create([
                 'name' => $input['name'],
                 'email' => $input['email'],
-                'documento' => $input['documento'],
+                'documento' => '', //$input['documento'],
                 'empresa' => $input['empresa'],
                 'cargo' => $input['cargo'],
                 'celular' => $input['celular'],
@@ -47,7 +47,7 @@ class CreateNewUser implements CreatesNewUsers
                 'productosferia_remanufac' => isset($input['productosferia_remanufac']) ? $input['productosferia_remanufac']:'',
                 'productosferia_recondoil' => isset($input['productosferia_recondoil']) ? $input['productosferia_recondoil']:'',
                 'productosferia_sis_lubrica' => isset($input['productosferia_sis_lubrica']) ? $input['productosferia_sis_lubrica']:'',
-                'tipocontacto' => $input['tipocontacto'],
+                'tipocontacto' => isset($input['tipocontacto']) ? $input['tipocontacto'] : '' ,
             // 'password' => Hash::make($input['password']),
         ]);
     }

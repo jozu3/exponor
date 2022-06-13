@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-12 md:col-span-4 ">
+            <div class="col-span-12 md:col-span-6 ">
                 <x-jet-label for="name" value="{{ __('Name') }}" />
                 @if (session('user'))
                     <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" value="{{session('user')->name}}" required autofocus autocomplete="name" />
@@ -38,12 +38,12 @@
                     <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
                 @endif
             </div>
-            <div class="col-span-12 md:col-span-4 ">
+            {{-- <div class="col-span-12 md:col-span-6 ">
                 <x-jet-label for="documento" value="{{ __('Documento de identidad') }}" />
                 <x-jet-input id="documento" class="block mt-1 w-full" type="text" name="documento" :value="old('documento')"
                     required autofocus autocomplete="documento" />
-            </div>
-            <div class="col-span-12 md:col-span-4 ">
+            </div> --}}
+            <div class="col-span-12 md:col-span-6 ">
                 <x-jet-label for="empresa" value="{{ __('Empresa') }}" />
                 <x-jet-input id="empresa" class="block mt-1 w-full" type="text" name="empresa" :value="old('empresa')"
                     required autofocus autocomplete="empresa" />
