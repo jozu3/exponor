@@ -36,7 +36,7 @@ class CreateNewUser implements CreatesNewUsers
                 'celular' => $input['celular'],
                 'driver_id' => isset($input['driver_id'])?$input['driver_id'] : '',
                 'driver' => isset($input['redsocial'])? isset($input['redsocial']):'',
-                'nivel_planta' => $input['nivel_planta'],
+                'nivel_planta' => '', //$input['nivel_planta'],
                 'nivel_mantenimiento' => $input['nivel_mantenimiento'],
                 'areas_interes' => $input['areas_interes'],
                 'presupuesto' => isset($input['presupuesto']) ? $input['presupuesto']:'' ,

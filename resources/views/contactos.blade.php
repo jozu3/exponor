@@ -13,13 +13,13 @@
                         <tr class="bg-dark text-ligth">
                             <th>Nombre</th>
                             <th>Mail</th>
-                            <th>Documento</th>
+                            {{-- <th>Documento</th> --}}
                             <th>Empresa</th>
                             <th>Cargo</th>
                             <th>Celular</th>
                             <th>driver_id</th>
                             <th>Red social</th>
-                            <th>Nivel planta</th>
+                            {{-- <th>Nivel planta</th> --}}
                             <th>Nivel mantenimiento</th>
                             <th>Areas de interes</th>
                             <th>Presupuesto</th>
@@ -41,9 +41,9 @@
                                 <td>
                                     {{$user->email}}
                                 </td>
-                                <td>
+                                {{-- <td>
                                     {{$user->documento}}
-                                </td>
+                                </td> --}}
                                 <td>
                                     {{$user->empresa}}
                                 </td>
@@ -59,7 +59,7 @@
                                 <td>
                                     {{$user->driver}}
                                 </td>
-                                <td>
+                                {{-- <td>
                                     @switch($user->nivel_planta)
                                         @case(1)
                                             {{'Bajo'}}
@@ -72,7 +72,7 @@
                                             @break
                                         @default
                                     @endswitch
-                                </td>
+                                </td> --}}
                                 <td>
                                     @switch($user->nivel_mantenimiento)
                                         @case(1)

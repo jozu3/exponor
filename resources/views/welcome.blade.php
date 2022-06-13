@@ -40,7 +40,7 @@
                 <div class="w-full p-16 text-left mx-auto">
                     <div x-show="activeTab===0" class="w-100">
                         <h2 class="font-bold text-ligth text-2xl mb-4">CUENTANOS SOBRE TU EMPRESA</h2>
-                        <div class="mb-8">
+                        {{-- <div class="mb-8">
                             <b>
                                 <li class="text-dark mb-6">Desplaza la barra para el nivel de planta</li>
                                 <div class="div-range-input">
@@ -55,7 +55,7 @@
                                 </div>
                             </b>
                             <br>
-                        </div>
+                        </div> --}}
                         <div class="mb-8">
                             <b>
                                 <li class="text-dark mb-6">Desplaza la barra para identificar cuál es el nivel de
