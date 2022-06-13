@@ -6,11 +6,11 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <table class="table-auto">
+        <div class=" mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-auto shadow-xl sm:rounded-lg p-4">
+                <table class="table-fixed">
                     <thead>
-                        <tr>
+                        <tr class="bg-dark text-ligth">
                             <th>Nombre</th>
                             <th>Mail</th>
                             <th>Documento</th>
@@ -60,19 +60,68 @@
                                     {{$user->driver}}
                                 </td>
                                 <td>
-                                    {{$user->nivel_planta}}
+                                    @switch($user->nivel_planta)
+                                        @case(1)
+                                            {{'Bajo'}}
+                                            @break
+                                        @case(2)
+                                            {{'Medio'}}
+                                            @break
+                                        @case(3)
+                                            {{'Alto'}}
+                                            @break
+                                        @default
+                                    @endswitch
                                 </td>
                                 <td>
-                                    {{$user->nivel_mantenimiento}}
+                                    @switch($user->nivel_mantenimiento)
+                                        @case(1)
+                                            {{'Bajo'}}
+                                            @break
+                                        @case(2)
+                                            {{'Medio'}}
+                                            @break
+                                        @case(3)
+                                            {{'Alto'}}
+                                            @break
+                                        @default
+                                    @endswitch
                                 </td>
                                 <td>
                                     {{$user->areas_interes}}
                                 </td>
                                 <td>
-                                    {{$user->presupuesto}}
+                                    @switch($user->presupuesto)
+                                        @case(1)
+                                            {{'0 a 50kUSD '}}
+                                            @break
+                                        @case(2)
+                                            {{'+50KUSD  a 150kUSD'}}
+                                            @break
+                                        @case(3)
+                                            {{'+150kUSD'}}
+                                            @break
+                                        @default
+                                            
+                                    @endswitch
                                 </td>
                                 <td>
-                                    {{$user->relacionskf}}
+                                    {{-- {{$user->relacionskf}} --}}
+                                    @switch($user->relacionskf)
+                                        @case(1)
+                                            {{'Ventas Spot'}}
+                                            @break
+                                        @case(2)
+                                            {{'Contratos de suministro'}}
+                                            @break
+                                        @case(3)
+                                            {{'Compra de reposición'}}
+                                            @break 
+                                        @case(4)
+                                            {{'Soy un Nuevo Cliente'}}
+                                            @break
+                                        @default
+                                    @endswitch
                                 </td>
                                 <td>
                                     {{$user->productosferia_servicio}}
