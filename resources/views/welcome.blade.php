@@ -26,13 +26,9 @@
             </div>
         </div>
 
-        @if (session('driver'))
-        <input type="text" value="{{session('driver')}}">
-        @endif
         @if (session('user'))
-            
+            <input type="hidden" value="{{session('user')->id}}" name="driver_id" readonly>
         @endif
-
 
         {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
         

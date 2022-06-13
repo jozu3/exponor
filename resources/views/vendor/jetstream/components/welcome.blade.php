@@ -51,9 +51,9 @@
             <div class="col-span-12 md:col-span-3 ">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 @if (session('user'))
-                    <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" value="{{session('user')->email}}" required autofocus autocomplete="name" />
+                    <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" value="{{session('user')->email}}" required />
                 @else
-                    <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"required />
+                    <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
                 @endif
             </div>
             <div class="col-span-12 md:col-span-3 ">
@@ -62,15 +62,14 @@
             </div>
             <div class="col-span-12 md:col-span-3 ">
                 <x-jet-label for="celular" value="{{ __('Celular') }}" />
-                <x-jet-input id="celular" class="block mt-1 w-full" type="text" name="celular" :value="old('celular')"
-                    required />
+                <x-jet-input id="celular" class="block mt-1 w-full" type="text" name="celular" :value="old('celular')" required />
             </div>
             <div class="col-span-12 md:col-span-3 ">
-                <x-jet-label for="redsocial" value="{{ __('Red Social') }}" />
                 @if (session('driver'))
-                    <x-jet-input id="redsocial" class="block mt-1 w-full" type="text" name="redsocial" :value="old('redsocial')" value="{{session('driver')}}" disabled required />
+                    <x-jet-label for="redsocial" value="{{ __('Red Social') }}" />
+                    <x-jet-input id="redsocial" class="block mt-1 w-full" type="text" name="redsocial" :value="old('redsocial')" value="{{session('driver')}}" readonly  />
                 @else
-                    <x-jet-input id="redsocial" class="block mt-1 w-full" type="text" name="redsocial" :value="old('redsocial')" required />
+                    {{-- <x-jet-input id="redsocial" class="block mt-1 w-full" type="text" name="redsocial" :value="old('redsocial')" readonly/> --}}
                 @endif
             </div>
         </div>
