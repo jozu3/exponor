@@ -7,21 +7,22 @@
 
         <div class="grid grid-cols-3 gap-4 mb-8">
             <div class="">
-                <a href="{{config('app.url')}}/login/google"
+                <a href="{{ route('login', 'google') }}"
                     class="login-driver flex justify-center rounded-full border border-dark w-fit px-2 py-1 m-auto">
                     <img src="{{ config('app.url') }}/src/Google.png" alt="">
                     <span class="ml-2">Iniciar con google</span>
                 </a>
             </div>
             <div>
-                <a href="{{config('app.url')}}/login/facebook"
+                <a href="{{ route('login', 'facebook') }}"
                     class="login-driver flex justify-center rounded-full border border-dark w-fit px-2 py-1 m-auto">
                     <img src="{{ config('app.url') }}/src/Facebook.png" alt="">
                     <span class="ml-2">Iniciar con facebook</span>
                 </a>
             </div>
             <div>
-                <a href="{{config('app.url')}}/login/linkedin"
+                {{-- <a href="{{config('app.url')}}/login/linkedin" --}}
+                <a href="{{ route('login', 'linkedin') }}"
                     class="login-driver flex justify-center rounded-full border border-dark w-fit px-2 py-1 m-auto">
                     <img src="{{ config('app.url') }}/src/LinkedIn.png" alt="">
                     <span class="ml-2">Iniciar con linkedin</span>
