@@ -125,7 +125,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
                                                 Ventas Spot</div>
                                         </label>
-                                        <input id="p5r1" type="radio" class="hidden" name="relacionskf" required
+                                        <input id="p5r1" type="radio" class="hidden" name="relacionskf" 
                                             value="1">
                                     </div>
                                     <div>
@@ -134,7 +134,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
                                                 Contratos de suministro</div>
                                         </label>
-                                        <input id="p5r2" type="radio" class="hidden" name="relacionskf" required
+                                        <input id="p5r2" type="radio" class="hidden" name="relacionskf" 
                                             value="2">
                                     </div>
                                     <div>
@@ -143,7 +143,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
                                                 Compra de reposición</div>
                                         </label>
-                                        <input id="p5r3" type="radio" class="hidden" name="relacionskf" required
+                                        <input id="p5r3" type="radio" class="hidden" name="relacionskf" 
                                             value="3">
                                     </div>
                                     <div>
@@ -152,7 +152,7 @@
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">Soy
                                                 un nuevo cliente</div>
                                         </label>
-                                        <input id="p5r4" type="radio" class="" style="width:0px; height: 0px; opacity:0;" name="relacionskf" required
+                                        <input id="p5r4" type="radio" class="" style="width:0px; height: 0px; opacity:0;" name="relacionskf" 
                                             value="4">
                                     </div>
 
