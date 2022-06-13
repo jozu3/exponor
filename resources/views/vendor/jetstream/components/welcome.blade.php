@@ -67,10 +67,10 @@
             </div>
             <div class="col-span-12 md:col-span-3 ">
                 @if (session('driver'))
-                    <x-jet-label for="redsocial" value="{{ __('Red Social') }}" />
-                    <x-jet-input id="redsocial" class="block mt-1 w-full" type="text" name="redsocial" :value="old('redsocial')" value="{{session('driver')}}" readonly  />
+                    <x-jet-label for="driver" value="{{ __('Red Social') }}" />
+                    <x-jet-input id="driver" class="block mt-1 w-full" type="text" name="driver" :value="old('driver')" value="{{session('driver')}}" readonly  />
                 @else
-                    {{-- <x-jet-input id="redsocial" class="block mt-1 w-full" type="text" name="redsocial" :value="old('redsocial')" readonly/> --}}
+                    {{-- <x-jet-input id="driver" class="block mt-1 w-full" type="text" name="driver" :value="old('driver')" readonly/> --}}
                 @endif
             </div>
         </div>
