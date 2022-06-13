@@ -231,7 +231,7 @@
                                 <label for="productosferia_sis_lubrica">
                                     <div style="" id="div-productosferia_sis_lubrica"
                                         class="dp6 cursor-pointer flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
-                                        <span>Sistemas de lubricación</span>
+                                        <span class="text-right">Sistemas de lubricación</span>
                                         <span class="bg-dark rounded-full float-right span-img-p6">
                                             <img id="img-productosferia_sis_lubrica"
                                                 src="{{ config('app.url') }}/src/icons/lubricacion.png" alt=""
