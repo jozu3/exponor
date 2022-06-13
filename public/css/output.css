@@ -1412,6 +1412,10 @@ select {
   flex-shrink: 0;
 }
 
+.table-auto {
+  table-layout: auto;
+}
+
 .origin-top-left {
   transform-origin: top left;
 }

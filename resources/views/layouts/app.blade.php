@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="description" content="SKF Exponor 2022">
+        <meta property="og:image" content="{{ config('app.url', '').'/src/favicon.png' }}">
+
+
         <link rel="icon" type="image/x-icon" href="{{config('app.url')}}/src/favicon.png">
 
         <title>SKF Exponor 2022</title>

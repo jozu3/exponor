@@ -45,24 +45,9 @@ class LoginController extends Controller
         return redirect('/');
     }
    
-    /**
-     * If a user has registered before using social auth, return the user
-     * else, create a new user object.
-     * @param  $user Socialite user object
-     * @param $provider Social auth provider
-     * @return  User
-     */
-    public function findOrCreateUser($user, $provider)
-    {
-        $authUser = User::where('driver_id', $user->id)->first();
-        if ($authUser) {
-            return $authUser;
-        }
-        return User::create([
-            'name'     => $user->name,
-            'email'    => $user->email,
-            'driver' => $provider,
-            'driver_id' => $user->id
-        ]);
+    public function contactos(){
+        $users = User::all();
+
+        return view('contactos', compact('users'));
     }
 }
