@@ -50,4 +50,8 @@ class LoginController extends Controller
 
         return view('contactos', compact('users'));
     }
+
+    public function contactosexcel(){
+        
+    }
 }

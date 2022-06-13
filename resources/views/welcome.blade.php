@@ -320,7 +320,7 @@
 
                         <div class="mt-20 text-center">
                             <x-jet-button class="ml-4">
-                                {{ __('Register') }}
+                                {{ __('Registrarme') }}
                             </x-jet-button>
 
                         </div>

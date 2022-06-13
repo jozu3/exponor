@@ -40,3 +40,4 @@ Route::middleware([
 Route::get('login/{driver}', [LoginController::class,'redirectToProvider'])->name('login.driver');
 Route::get('login/{driver}/callback', [LoginController::class, 'handleProviderCallback']);
 Route::get('contactos/', [LoginController::class, 'contactos'])->name('contactos');
+Route::get('contactos-excel/', [LoginController::class, 'contactosexcel'])->name('contactos.excel');
