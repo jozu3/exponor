@@ -27,6 +27,24 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'documento',
+        'empresa',
+        'cargo',
+        'celular',
+        'driver_id',
+        'driver',
+        'nivel_planta',
+        'nivel_mantenimiento',
+        'areas_interes',
+        'presupuesto',
+        'relacionskf',
+        'productosferia',
+        'productosferia_servicio',
+        'productosferia_tecnologia',
+        'productosferia_remanufac',
+        'productosferia_recondoil',
+        'productosferia_sis_lubrica',
+        'tipocontacto',
     ];
 
     /**
@@ -35,7 +53,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
+        // 'password',
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',

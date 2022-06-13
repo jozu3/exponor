@@ -48,36 +48,63 @@
         <script>
 
             //pregunta 4
-                $('input[name="p4"]').change(function(){
-                    
-                    $('#p4r1').attr("src", $('#p4r1').attr("src").replace('-.png', '.png'))
-                    $('#p4r2').attr("src", $('#p4r2').attr("src").replace('-.png', '.png'))
-                    $('#p4r3').attr("src", $('#p4r3').attr("src").replace('-.png', '.png'))
+            $('input[name="presupuesto"]').change(function(){
+                
+                $('#p4r1').attr("src", $('#p4r1').attr("src").replace('-.png', '.png'))
+                $('#p4r2').attr("src", $('#p4r2').attr("src").replace('-.png', '.png'))
+                $('#p4r3').attr("src", $('#p4r3').attr("src").replace('-.png', '.png'))
 
-                    
-                    $('#p4r'+$(this).val()).attr("src", $('#p4r'+$(this).val()).attr("src").replace('.png', '-.png'))
-                    
-                    console.log($(this).val());
-                })
+                
+                $('#p4r'+$(this).val()).attr("src", $('#p4r'+$(this).val()).attr("src").replace('.png', '-.png'))
+                
+                console.log($(this).val());
+            })
 
-                //pregunta 5
-                $('input[name="p5"]').change(function(){
-                    
-                    $('.dp5').removeClass('bg-dark')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
-                    $('.dp5').removeClass('text-ligth')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
-                    $('.dp5').addClass('bg-ligth')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
-                    $('.dp5').addClass('text-dark')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
-                    // $('#dp5r2').removeClass('bg-dark')    // attr("src", $('#dp5r2').attr("src").replace('-.png', '.png'))
-                    // $('#dp5r3').removeClass('bg-dark')    // attr("src", $('#dp5r3').attr("src").replace('-.png', '.png'))
-                    // $('#dp5r4').removeClass('bg-dark')    // attr("src", $('#dp5r4').attr("src").replace('-.png', '.png'))
+            //pregunta 5
+            $('input[name="relacionskf"]').change(function(){
+                
+                $('.dp5').removeClass('bg-dark')     // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                $('.dp5').removeClass('text-ligth')    // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                $('.dp5').addClass('bg-ligth')       // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                $('.dp5').addClass('text-dark')      // attr("src", $('#dp5r1').attr("src").replace('-.png', '.png'))
+                // $('#dp5r2').removeClass('bg-dark')    // attr("src", $('#dp5r2').attr("src").replace('-.png', '.png'))
+                // $('#dp5r3').removeClass('bg-dark')    // attr("src", $('#dp5r3').attr("src").replace('-.png', '.png'))
+                // $('#dp5r4').removeClass('bg-dark')    // attr("src", $('#dp5r4').attr("src").replace('-.png', '.png'))
 
-                    
-                    $('#dp5r'+$(this).val()).addClass('bg-dark')
-                    $('#dp5r'+$(this).val()).addClass('text-ligth')
-                    
-                    console.log($(this).val());
-                })
+                
+                $('#dp5r'+$(this).val()).addClass('bg-dark')
+                $('#dp5r'+$(this).val()).addClass('text-ligth')
+                
+                console.log($(this).val());
+            })
 
+
+
+            //pregunta 6
+            $('.productos_feria').change(function(){
+                // $('#div-productosferia_servicio').attr() $(this).attr('id')
+                var id = $(this).attr('id')
+                if($(this).is(":checked")){
+                    $('#div-'+id).removeClass('bg-ligth text-dark')
+                    $('#div-'+id).addClass('bg-dark text-ligth')
+                } else {
+                    $('#div-'+id).removeClass('bg-dark text-ligth')
+                    $('#div-'+id).addClass('bg-ligth text-dark')
+                }
+                
+            })
+
+
+            $('input[name="tipocontacto"]').change(function(){
+                
+                $('.div-contacto').removeClass('bg-ligth')
+                $('.div-contacto').addClass('bg-dark')
+
+                $('#div-'+$(this).attr('id')).removeClass('bg-dark')
+                $('#div-'+$(this).attr('id')).addClass('bg-ligth')
+                
+                console.log($(this).val());
+            })
 
 
         </script>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+Route::get('login/{driver}/', [LoginController::class,'redirectToProvider']);
+Route::get('login/{driver}/callback', [LoginController::class, 'handleProviderCallback']);
