@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h1 class="leading-tight">
-            <div class="mt-8 text-ligth" style="font-size: 4rem;">
+            <div class="md:mt-8 text-ligth" style="font-size: 4rem;">
                 <b>EXPO</b>NOR 2022
             </div>
         </h1>
@@ -31,7 +31,7 @@
             <div x-data="setup()" class="w-full max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <ul class="flex justify-center items-center my-4">
                     <template x-for="(tab, index) in tabs" :key="index">
-                        <li class="cursor-pointer xs:py-1 md:py-2 xs:px-2 md:px-4 bg-ligth text-dark border-0 rounded-full m-4 xs:text-xs"
+                        <li class="cursor-pointer xs:py-1 md:py-2 xs:px-2 md:px-4 bg-ligth text-dark border-0 rounded-full p-2 m-4 xs:text-xs"
                             :class="activeTab === index ? 'bg-dark text-ligth border-0' : ''" @click="activeTab = index"
                             x-text="tab"></li>
                     </template>
@@ -88,21 +88,21 @@
                             </b>
                             <div>
                                 <div class="md:flex md:justify-between m-auto text-ligth" style="width:80%; ">
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="r1">
                                             <img id="p4r1" src="{{ config('app.url') }}/src/IMG/p4r1.png"
                                                 class="img-radio-p4 cursor-pointer" alt="">
                                         </label>
                                         <input id="r1" type="radio" name="presupuesto" class="hidden" value="1">
                                     </div>
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="r2">
                                             <img id="p4r2" src="{{ config('app.url') }}/src/IMG/p4r2.png"
                                                 class="img-radio-p4 cursor-pointer" alt="">
                                         </label>
                                         <input id="r2" type="radio" name="presupuesto" class="hidden" value="2">
                                     </div>
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="r3">
                                             <img id="p4r3" src="{{ config('app.url') }}/src/IMG/p4r3.png"
                                                 class="img-radio-p4 cursor-pointer" alt="">
@@ -119,7 +119,7 @@
                             </b>
                             <div>
                                 <div class="md:flex md:justify-between m-auto text-ligth" style="width:80%; ">
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="p5r1">
                                             <div id="dp5r1"
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
@@ -128,7 +128,7 @@
                                         <input id="p5r1" type="radio" class="hidden" name="relacionskf" 
                                             value="1">
                                     </div>
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="p5r2">
                                             <div id="dp5r2"
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
@@ -137,7 +137,7 @@
                                         <input id="p5r2" type="radio" class="hidden" name="relacionskf" 
                                             value="2">
                                     </div>
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="p5r3">
                                             <div id="dp5r3"
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">
@@ -146,7 +146,7 @@
                                         <input id="p5r3" type="radio" class="hidden" name="relacionskf" 
                                             value="3">
                                     </div>
-                                    <div>
+                                    <div class="mb-4">
                                         <label for="p5r4">
                                             <div id="dp5r4"
                                                 class="p-4 dp5 bg-ligth text-dark rounded-lg cursor-pointer">Soy

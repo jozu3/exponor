@@ -2461,6 +2461,10 @@ select {
     margin-left: 1.5rem;
   }
 
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -2619,8 +2623,16 @@ select {
     grid-column: span 3 / span 3;
   }
 
+  .md\:m-4 {
+    margin: 1rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
   }
 
   .md\:flex {

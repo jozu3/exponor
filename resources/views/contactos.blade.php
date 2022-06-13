@@ -141,8 +141,6 @@
                                 <td>
                                     {{$user->tipocontacto}}
                                 </td>
-                                <td>
-                                </td>
                             </tr>
                         @endforeach
                        
