@@ -29,5 +29,5 @@ Route::middleware([
 });
 
 
-Route::get('login/{driver}', [LoginController::class,'redirectToProvider'])->name('login');
+Route::get('login/{driver}', [LoginController::class,'redirectToProvider'])->name('login.driver');
 Route::get('login/{driver}/callback', [LoginController::class, 'handleProviderCallback']);

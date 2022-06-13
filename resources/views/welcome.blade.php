@@ -174,7 +174,7 @@
                             <div class="mb-10">
                                 <label for="productosferia_servicio">
                                     <div style="" id="div-productosferia_servicio"
-                                        class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
+                                        class="dp6 cursor-pointer flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                         <span>Servicio</span>
                                         <span class="bg-dark rounded-full float-right span-img-p6">
                                             <img id="img-productosferia_servicio"
@@ -189,7 +189,7 @@
                             <div class="mb-10">
                                 <label for="productosferia_tecnologia">
                                     <div style="" id="div-productosferia_tecnologia"
-                                        class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
+                                        class="dp6 cursor-pointer flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                         <span>Tecnología</span>
                                         <span class="bg-dark rounded-full float-right span-img-p6">
                                             <img id="img-productosferia_tecnologia"
@@ -204,7 +204,7 @@
                             <div class="mb-10">
                                 <label for="productosferia_remanufac">
                                     <div style="" id="div-productosferia_remanufac"
-                                        class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
+                                        class="dp6 cursor-pointer flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                         <span>Remanufactura</span>
                                         <span class="bg-dark rounded-full float-right span-img-p6">
                                             <img id="img-productosferia_remanufac"
@@ -221,7 +221,7 @@
                             <div class="mb-10">
                                 <label for="productosferia_recondoil">
                                     <div style="" id="div-productosferia_recondoil"
-                                        class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
+                                        class="dp6 cursor-pointer flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                         <span>Recondoil</span>
                                         <span class="bg-dark rounded-full float-right span-img-p6">
                                             <img id="img-productosferia_recondoil"
@@ -236,7 +236,7 @@
                             <div class="mb-10">
                                 <label for="productosferia_sis_lubrica">
                                     <div style="" id="div-productosferia_sis_lubrica"
-                                        class="dp6 flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
+                                        class="dp6 cursor-pointer flex items-center justify-end bg-ligth font-bold text-dark rounded-full m-auto">
                                         <span>Sistemas de lubricación</span>
                                         <span class="bg-dark rounded-full float-right span-img-p6">
                                             <img id="img-productosferia_sis_lubrica"
@@ -257,7 +257,7 @@
                         <div class="grid grid-rows-3 md:grid-rows-2 grid-flow-col gap-4">
                             <div>
                                 <label for="llamada">
-                                    <div id="div-llamada" class="div-contacto rounded-full bg-dark p-6 m-auto max-w-fit">
+                                    <div id="div-llamada" class="div-contacto cursor-pointer rounded-full bg-dark p-6 m-auto max-w-fit">
                                         <img width="150px" class=""
                                             src="{{ config('app.url') }}/src/icons/llamada.png" alt="">
                                     </div>
@@ -268,7 +268,7 @@
                             </div>
                             <div>
                                 <label for="mail">
-                                    <div id="div-mail" class="div-contacto rounded-full bg-dark p-6 m-auto max-w-fit">
+                                    <div id="div-mail" class="div-contacto cursor-pointer rounded-full bg-dark p-6 m-auto max-w-fit">
                                         <img width="150px" class=""
                                             src="{{ config('app.url') }}/src/icons/Mail.png" alt="">
                                     </div>
@@ -278,7 +278,7 @@
                             </div>
                             <div>
                                 <label for="videollamada">
-                                    <div id="div-videollamada" class="div-contacto rounded-full bg-dark p-6 m-auto max-w-fit">
+                                    <div id="div-videollamada" class="div-contacto cursor-pointer rounded-full bg-dark p-6 m-auto max-w-fit">
                                         <img width="150px" class=""
                                             src="{{ config('app.url') }}/src/icons/Videollamada.png" alt="">
                                     </div>
@@ -289,7 +289,7 @@
                             </div>
                             <div>
                                 <label for="wasap">
-                                    <div id="div-wasap" class="div-contacto rounded-full bg-dark p-6 m-auto max-w-fit">
+                                    <div id="div-wasap" class="div-contacto cursor-pointer rounded-full bg-dark p-6 m-auto max-w-fit">
                                         <img width="150px" class=""
                                             src="{{ config('app.url') }}/src/icons/Wsp.png" alt="">
                                     </div>
@@ -300,7 +300,7 @@
                             </div>
                             <div>
                                 <label for="presencial">
-                                    <div id="div-presencial" class="div-contacto rounded-full bg-dark p-6 m-auto max-w-fit">
+                                    <div id="div-presencial" class="div-contacto cursor-pointer rounded-full bg-dark p-6 m-auto max-w-fit">
                                         <img width="150px" class=""
                                             src="{{ config('app.url') }}/src/icons/Presencial.png" alt="">
                                     </div>
@@ -312,7 +312,7 @@
                             </div>
                             <div>
                                 <label for="todas">
-                                    <div id="div-todas" class="div-contacto rounded-full bg-dark p-6 m-auto max-w-fit">
+                                    <div id="div-todas" class="div-contacto cursor-pointer rounded-full bg-dark p-6 m-auto max-w-fit">
                                         <img width="150px" class=""
                                             src="{{ config('app.url') }}/src/icons/TA.png" alt="">
                                     </div>

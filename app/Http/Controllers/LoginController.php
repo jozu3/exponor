@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use Laravel\Socialite\Facades\Socialite;;
 use App\Models\User;
-use Auth;
  
 class LoginController extends Controller
 {
@@ -19,7 +18,7 @@ class LoginController extends Controller
      */
     public function redirectToProvider($provider)
     {
-        return Socialite::driver($provider)->scopes(['r_liteprofile', 'r_emailaddress'])->redirect();
+        return Socialite::driver($provider)->redirect();
     }
    
     /**
@@ -29,13 +28,16 @@ class LoginController extends Controller
      */
     public function handleProviderCallback($provider)
     {
-        $user = Socialite::driver($provider)->user();
-        // $authUser = $this->findOrCreateUser($user, $provider);
-        // Auth::login($authUser, true);
-        // dd($user);
-        //  echo $user->id;
-        //  echo $user->name;
-        //  echo $user->email;
+        $user = Socialite::driver($provider);
+   
+        switch($provider){
+            case 'google' || 'linkedin':
+                $user = $user->user();
+                break;
+            case 'facebook':
+                $user = $user->fields(['name', 'first_name', 'last_name', 'email', 'gender', 'verified'])->user();
+        }
+
         session([
             'user' => $user,
             'driver' => $provider
