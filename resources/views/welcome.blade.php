@@ -319,7 +319,7 @@
                         </div>
 
                         <div class="mt-20 text-center">
-                            <x-jet-button class="ml-4">
+                            <x-jet-button class="ml-4 text-lg rounded-full py-2 px-4">
                                 {{ __('Registrarme') }}
                             </x-jet-button>
 
