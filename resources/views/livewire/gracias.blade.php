@@ -19,7 +19,7 @@
         <x-slot name="footer">
             <div class="text-center mb-10">
                 <a href="https://cl.promo.skf.com/acton/media/23866/exponor-chile-2022" target="_blank"
-                    class=" bg-ligth text-dark rounded-full text-center py-2 px-4 m-auto">
+                    class=" bg-ligth text-dark rounded-full text-center py-4 px-8 m-auto">
                    <b> Descarga brochures SKF</b>
                 </a>
             </div>
