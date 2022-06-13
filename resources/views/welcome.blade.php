@@ -3,14 +3,6 @@
         <h1 class="leading-tight">
             <div class="mt-8 text-ligth" style="font-size: 4rem;">
                 <b>EXPO</b>NOR 2022
-                <form method="POST" action="{{ route('logout') }}" x-data>
-                    @csrf
-
-                    <x-jet-dropdown-link href="{{ route('logout') }}"
-                             @click.prevent="$root.submit();">
-                        {{ __('Log Out') }}
-                    </x-jet-dropdown-link>
-                </form>
             </div>
         </h1>
     </x-slot>
@@ -29,7 +21,9 @@
         @if (session('user'))
             <input type="hidden" value="{{session('user')->id}}" name="driver_id" readonly>
         @endif
-
+        @auth
+            
+        @endauth
         {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
         
         <div class="flex justify-center items-center bg-section">

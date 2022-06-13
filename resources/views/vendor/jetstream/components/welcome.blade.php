@@ -5,8 +5,8 @@
 
 
 
-        <div class="grid grid-cols-3 gap-4 mb-8">
-            <div class="">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div>
                 <a href="{{ route('login.driver', 'google') }}"
                     class="login-driver flex justify-center rounded-full border border-dark w-fit px-2 py-1 m-auto">
                     <img src="{{ config('app.url') }}/src/Google.png" alt="">

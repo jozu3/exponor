@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $estado = false;
+    if (auth()->user()) {
+        session(['user' => null]);
+        session(['driver' => null]);
+        $estado = true;
+    }
+    Auth::logout();
+    return view('welcome', compact('estado'));
 });
 
 Route::middleware([
